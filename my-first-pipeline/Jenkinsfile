@@ -6,6 +6,7 @@ pipeline {
     stage('Test') {
       steps {
         sh 'nginx -version'
+        sh 'echo "Yes, Abishek you did it nginx is working perfectly hurrayyyyy......."'
       }
     }
   }
