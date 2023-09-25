@@ -6,7 +6,7 @@ pipeline {
     stage('Test') {
       steps {
         sh 'nginx -version'
-        sh "docker container ls  | grep 'nginx' | awk '{print $1}'"
+        sh "sudo docker container ls"
         sh 'echo "Yes, Abishek you did it nginx is working perfectly hurrayyyyy......."'
       }
     }
