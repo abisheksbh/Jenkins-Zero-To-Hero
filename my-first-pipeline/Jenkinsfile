@@ -6,7 +6,8 @@ pipeline {
     stage('Test') {
       steps {
         sh 'nginx -version'
-        sh 'curl google.com'
+        sh 'sleep 50'
+        sh 'curl localhost'
         sh 'echo "Yes, Abishek you did it nginx is working perfectly hurrayyyyy......."'
       }
     }
